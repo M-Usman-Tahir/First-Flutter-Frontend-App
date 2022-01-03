@@ -1,6 +1,6 @@
 {
-    "name": "dream_vacation",
-    "short_name": "dream_vacation",
+    "name": "flutter_app",
+    "short_name": "flutter_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
