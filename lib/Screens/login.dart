@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Screens/signin.dart';
-import 'package:flutter_app/static/staticvars.dart';
+import 'package:flutter_app/Screens/mainScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -147,11 +147,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                   20, 0, 20, 0) //EdgeInsets.all(30),
                               ),
                           onPressed: () {
-                            print('Pressed');
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => LoginSignupScreen()));
+                            // print('Pressed');
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MainScreen()));
                           },
                         ))),
                 Align(
