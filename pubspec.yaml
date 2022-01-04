@@ -63,6 +63,11 @@ flutter:
     - Assets/monkey.jpg
     - Assets/bg2_1.jpg
     - Assets/bg2_2.jpg
+    - Assets/h1.jpg
+    - Assets/h2_1.jpg
+    - Assets/h2_2.jpg
+    - Assets/h3.jpg
+    - Assets/h4.jpg
     # - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
