@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Screens/signin.dart';
 import 'package:flutter_app/static/staticvars.dart';
 
-class LoginSignupScreen extends StatefulWidget {
+class LoginScreen extends StatefulWidget {
   @override
-  _LoginSignupScreenState createState() => _LoginSignupScreenState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginSignupScreenState extends State<LoginSignupScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -73,7 +74,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                         color: Colors.black,
                       ),
                     )),
-                    // ! ***** Text Field
+                // ! ***** Text Field
                 Align(
                   alignment: Alignment(0, -0.1),
                   child: TextField(
@@ -113,7 +114,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                         color: Colors.black,
                       ),
                     )),
-                    // ! ***** Text Field
+                // ! ***** Text Field
                 Align(
                   alignment: Alignment(0, 0.28),
                   child: TextField(
@@ -152,7 +153,30 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                             //     MaterialPageRoute(
                             //         builder: (context) => LoginSignupScreen()));
                           },
-                        )))
+                        ))),
+                Align(
+                    alignment: Alignment.bottomRight,
+                    child: TextButton(
+                      child: Text(
+                        'Sign In',
+                        style: TextStyle(fontSize: 30),
+                      ),
+                      style: TextButton.styleFrom(
+                          primary: Colors.black,
+                          backgroundColor: Colors.green[200],
+                          onSurface: Colors.grey,
+                          padding: EdgeInsets.fromLTRB(
+                              20, 0, 20, 0) //EdgeInsets.all(30),
+                          ),
+                      onPressed: () {
+                        // print('Pressed');
+                        Navigator.pop(context);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignupScreen()));
+                      },
+                    ))
               ]),
             )), /* add child content here */
       ),
