@@ -7,67 +7,155 @@ class LoginSignupScreen extends StatefulWidget {
 }
 
 class _LoginSignupScreenState extends State<LoginSignupScreen> {
-  bool isSignupScreen = true;
-  bool isMale = true;
-  bool isRememberMe = false;
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: StaticVars.backgroundColor,
-        body: Stack(children: [
-          Positioned(
-            top: 0,
-            right: 0,
-            left: 0,
-            child: Container(
-              height: 300,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("images/background.jpg"),
-                      fit: BoxFit.fill)),
-              child: Container(
-                padding: EdgeInsets.only(top: 90, left: 20),
-                color: Color(0xFF3b5999).withOpacity(.85),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    RichText(
-                      text: TextSpan(
-                          text: "Welcome to",
-                          style: TextStyle(
-                            fontSize: 25,
-                            letterSpacing: 2,
-                            color: Colors.yellow[700],
-                          ),
-                          children: [
-                            TextSpan(
-                              text: isSignupScreen ? " Rizona," : " Back,",
-                              style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.yellow[700],
-                              ),
-                            )
-                          ]),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      isSignupScreen
-                          ? "Signup to Continue"
-                          : "Signin to Continue",
-                      style: TextStyle(
-                        letterSpacing: 1,
-                        color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
+    return MaterialApp(
+        home: Scaffold(
+      body: Center(
+        // child: GestureDetector(
+        //   onTap: () => Navigator.pop(context),
+        child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("Assets/bg2_1.jpg"),
+                fit: BoxFit.cover,
               ),
             ),
-          ),
-        ]));
+            child: Center(
+              child: Stack(children: <Widget>[
+                // Stroked text as border.
+                Align(
+                    alignment: Alignment(0, -.7),
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 80,
+                        fontStyle: FontStyle.italic,
+                        foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..strokeWidth = 2
+                          ..color = Colors.blue,
+                      ),
+                    )),
+                // Solid text as fill.
+                Align(
+                    alignment: Alignment(0, -.7),
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 80,
+                        fontStyle: FontStyle.italic,
+                        color: Colors.black,
+                      ),
+                    )),
+                // ! ******** Username
+                Align(
+                    alignment: Alignment(-0.95, -.28),
+                    child: Text(
+                      'Username',
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontStyle: FontStyle.italic,
+                        foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..strokeWidth = 2
+                          ..color = Colors.white,
+                      ),
+                    )),
+                // Solid text as fill.
+                Align(
+                    alignment: Alignment(-0.95, -.28),
+                    child: Text(
+                      'Username',
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontStyle: FontStyle.italic,
+                        color: Colors.black,
+                      ),
+                    )),
+                    // ! ***** Text Field
+                Align(
+                  alignment: Alignment(0, -0.1),
+                  child: TextField(
+                    onChanged: (text) {
+                      print(text);
+                    },
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter a search term',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.7),
+                    ),
+                  ),
+                ),
+                // ! ****
+                Align(
+                    alignment: Alignment(-0.95, 0.1),
+                    child: Text(
+                      'Password',
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontStyle: FontStyle.italic,
+                        foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..strokeWidth = 2
+                          ..color = Colors.white,
+                      ),
+                    )),
+                // Solid text as fill.
+                Align(
+                    alignment: Alignment(-0.95, 0.1),
+                    child: Text(
+                      'Password',
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontStyle: FontStyle.italic,
+                        color: Colors.black,
+                      ),
+                    )),
+                    // ! ***** Text Field
+                Align(
+                  alignment: Alignment(0, 0.28),
+                  child: TextField(
+                    onChanged: (text) {
+                      print(text);
+                    },
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter a search term',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.7),
+                    ),
+                  ),
+                ),
+                // ! *****
+                Container(
+                    // margin: EdgeInsets.only(bottom: 20),
+                    child: Align(
+                        alignment: Alignment(0, 0.6),
+                        child: TextButton(
+                          child: Text(
+                            'LogIn',
+                            style: TextStyle(fontSize: 30),
+                          ),
+                          style: TextButton.styleFrom(
+                              primary: Colors.black,
+                              backgroundColor: Colors.blue[200],
+                              onSurface: Colors.grey,
+                              padding: EdgeInsets.fromLTRB(
+                                  20, 0, 20, 0) //EdgeInsets.all(30),
+                              ),
+                          onPressed: () {
+                            print('Pressed');
+                            // Navigator.push(
+                            //     context,
+                            //     MaterialPageRoute(
+                            //         builder: (context) => LoginSignupScreen()));
+                          },
+                        )))
+              ]),
+            )), /* add child content here */
+      ),
+    ));
   }
 }
