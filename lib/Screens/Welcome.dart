@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Screens/login.dart';
-import 'package:flutter_app/Screens/Monkey.dart';
-
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -66,7 +64,7 @@ class _Welcome extends State<WelcomeScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => MonkeyScreen()));
+                                    builder: (context) => LoginScreen()));
                           },
                         )))
               ]),
