@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/Screens/login.dart';
 import 'package:flutter_app/Screens/Welcome.dart';
 
 void main() => runApp(Start());
@@ -32,15 +31,15 @@ class Start extends StatelessWidget {
   }
 }
 
-class SignIn extends StatelessWidget {
-  const SignIn({Key? key}) : super(key: key);
+// class SignIn extends StatelessWidget {
+//   const SignIn({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Login Signup UI",
-      home: LoginSignupScreen(),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "Login Signup UI",
+//       home: LoginSignupScreen(),
+//     );
+//   }
+// }
