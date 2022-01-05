@@ -83,7 +83,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Enter your username',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -123,7 +123,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Enter your password',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -164,7 +164,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Enter you email',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -204,7 +204,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Enter your phone number',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
