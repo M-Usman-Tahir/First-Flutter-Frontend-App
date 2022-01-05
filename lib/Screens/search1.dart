@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Screens/search2.dart';
 
 class SearchScreen1 extends StatefulWidget {
   @override
@@ -81,7 +82,7 @@ class _SearchScreen1State extends State<SearchScreen1> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Star Rating',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -121,7 +122,7 @@ class _SearchScreen1State extends State<SearchScreen1> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Room Number',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -162,7 +163,7 @@ class _SearchScreen1State extends State<SearchScreen1> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Bathroom Number',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -202,7 +203,7 @@ class _SearchScreen1State extends State<SearchScreen1> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Guest Number',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -245,12 +246,12 @@ class _SearchScreen1State extends State<SearchScreen1> {
                               20, 0, 20, 0) //EdgeInsets.all(30),
                           ),
                       onPressed: () {
-                        print('Pressed');
-                        // Navigator.pop(context);
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => LoginScreen()));
+                        // print('Pressed');
+                        Navigator.pop(context);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SearchScreen2()));
                       },
                     ))
               ]),
