@@ -68,6 +68,8 @@ flutter:
     - Assets/h2_2.jpg
     - Assets/h3.jpg
     - Assets/h4.jpg
+    - Assets/h5.jpg
+    - Assets/Map.jpg
     # - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
