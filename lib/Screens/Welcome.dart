@@ -24,9 +24,9 @@ class _Welcome extends State<WelcomeScreen> {
                 // Stroked text as border.
                 Center(
                     child: Text(
-                  'Welcome',
+                  'Lets Make Your Dream Vacation',
                   style: TextStyle(
-                    fontSize: 80,
+                    fontSize: 60,
                     fontStyle: FontStyle.italic,
                     foreground: Paint()
                       ..style = PaintingStyle.stroke
@@ -37,9 +37,9 @@ class _Welcome extends State<WelcomeScreen> {
                 // Solid text as fill.
                 Center(
                     child: Text(
-                  'Welcome',
+                  'Lets Make Your Dream Vacation',
                   style: TextStyle(
-                    fontSize: 80,
+                    fontSize: 60,
                     fontStyle: FontStyle.italic,
                     color: Colors.black,
                   ),
@@ -50,7 +50,7 @@ class _Welcome extends State<WelcomeScreen> {
                         alignment: Alignment.bottomCenter,
                         child: TextButton(
                           child: Text(
-                            'Continue',
+                            'Lets Go',
                             style: TextStyle(fontSize: 30),
                           ),
                           style: TextButton.styleFrom(
