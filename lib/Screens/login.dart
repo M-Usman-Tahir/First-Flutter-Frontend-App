@@ -83,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Enter your username',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
@@ -123,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Enter a search term',
+                      hintText: 'Enter your password',
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.7),
                     ),
