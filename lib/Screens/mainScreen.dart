@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Screens/search1.dart';
+import 'package:flutter_app/Screens/search6.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -23,9 +24,10 @@ class _MainScreenState extends State<MainScreen> {
             child: Center(
               child: Stack(children: <Widget>[
                 // Stroked text as border.
-                Center(
+                Align(
+                  alignment: Alignment(0, -0.6),
                     child: Text(
-                  'Welcome',
+                  'Star Hotels',
                   style: TextStyle(
                     fontSize: 80,
                     fontStyle: FontStyle.italic,
@@ -36,22 +38,47 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                 )),
                 // Solid text as fill.
-                Center(
+                Align(
+                  alignment: Alignment(0, -0.6),
                     child: Text(
-                  'Welcome',
+                  'Star Hotels',
                   style: TextStyle(
                     fontSize: 80,
                     fontStyle: FontStyle.italic,
                     color: Colors.black,
                   ),
                 )),
+                Align(
+                  alignment: Alignment(0, -0.1),
+                  child: TextButton(
+                    child: Text(
+                      'Maps',
+                      style: TextStyle(fontSize: 30),
+                    ),
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.blue[200],
+                      onSurface: Colors.grey,
+                      padding: EdgeInsets.fromLTRB(
+                              30, 10, 30, 10)
+                      // padding: Edge//EdgeInsets.all(30),
+                    ),
+                    onPressed: () {
+                      // print('Pressed');
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SearchScreen6()));
+                    },
+                  )
+                ),
                 Container(
                     margin: EdgeInsets.only(bottom: 20),
                     child: Align(
-                        alignment: Alignment.bottomCenter,
+                        alignment: Alignment(0, 0.4),
                         child: TextButton(
                           child: Text(
-                            'Continue',
+                            'Search Hotels',
                             style: TextStyle(fontSize: 30),
                           ),
                           style: TextButton.styleFrom(
