@@ -1,7 +1,8 @@
 # First-Flutter-Frontend-App
-## dream_vacation
+## Dream Vacation
 
-A new Flutter project.
+A new beginners Flutter project.
+Only frontend no backend or realtime process 
 
 ### Getting Started
 
